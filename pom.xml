@@ -65,7 +65,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.ai</groupId>
-            <artifactId>spring-ai-ollama-spring-boot-starter</artifactId>
+            <artifactId>spring-ai-anthropic-spring-boot-starter</artifactId>
             <version>1.0.0-M6</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.alibaba/dashscope-sdk-java -->
