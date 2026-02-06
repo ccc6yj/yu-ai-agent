@@ -203,6 +203,28 @@ stream.subscribe(
 );
 ```
 
+### 3.4 当前项目实战接口（可直接调用）
+
+你当前项目里已新增 2 个接口，分别对应 `Function Calling` 和 `Structured Output`：
+
+1. Function Calling 天气查询
+
+```bash
+curl "http://localhost:8123/api/ai/advanced/weather?city=北京"
+```
+
+2. Structured Output 图书推荐（返回 JSON）
+
+```bash
+curl "http://localhost:8123/api/ai/advanced/book?topic=Spring%20AI"
+```
+
+建议练习顺序：
+
+- 先调用 `/weather`，观察模型如何自动触发 `getWeather` 工具函数
+- 再调用 `/book`，观察返回结果如何直接映射成 `BookRecommendation` Java 对象
+- 最后把天气函数从“本地 mock”改成“真实天气 API”，完成一次完整升级
+
 ---
 
 ## 第四阶段：RAG 检索增强

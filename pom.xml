@@ -74,6 +74,12 @@
             <artifactId>dashscope-sdk-java</artifactId>
             <version>2.19.1</version>
         </dependency>
+        <!-- 解决 spring-ai 与 dashscope 传递依赖导致的 jsonschema 版本冲突 -->
+        <dependency>
+            <groupId>com.github.victools</groupId>
+            <artifactId>jsonschema-generator</artifactId>
+            <version>4.37.0</version>
+        </dependency>
 
 
 
